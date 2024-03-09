@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Css_Table</title>
+    <style>
+        caption{
+            caption-side: top;
+        }
+        table,td,th{
+            /*border-collapse: separate;*/
+            border-collapse: collapse;
+            border-spacing: 10px 30px;
+            /*empty-cells: show;*/
+            padding: 20px 15px;
+            margin: 15%;
+        }
+        /*tr:hover{
+            background-color: grey;
+        }*/
+        /*tr:nth-child(odd){
+            background-color: rgba(98, 210, 241, 0.785);
+        }*/
+        td{
+            vertical-align: middle;
+        }
+        th{
+            background-color: rgb(209, 92, 242);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="n">
+        <caption>Student Information:</caption>
+        <thead>
+            <tr>
+                <th colspan="5">student list</th>
+                <!-- <th>Name</th>
+                <th>Branch</th>
+                <th>Year</th>
+                <th>College</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shubhangi</td>
+                <td>Electronics</td>
+                <td>Final Year</td>
+                <td rowspan="4">WIT</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Harshita</td>
+                <td>Electronics & Telecommunication</td>
+                <td>First Year</td>
+                <!-- <td>WIT</td> -->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Akshit</td>
+                <td>Electronics & Electrical</td>
+                <td>Third Year</td>
+                <!-- <td>WIT</td> -->
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ganesh</td>
+                <td>Computer Science</td>
+                <td>First Year</td>
+                <!-- <td>WIT</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

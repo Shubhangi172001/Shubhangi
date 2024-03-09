@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <Style>
+        div{
+            height: 600px;
+            width: 800px;
+            position: absolute;
+            /*background-image: url(imag.jpg);*/
+            background-size: cover;
+            animation-duration: 6s;
+            animation-iteration-count: 6;
+            animation-name: example;
+            /*animation: slider 10s infinite linear;*/
+            left: 10%;
+            top: 20%;
+        } 
+        @keyframes example{
+            0%{background-image: url(1.jpg);}
+            25%{background-image: url(2.jpg);}
+            50%{background-image: url(3.jpg);}
+            75%{background-image: url(4.jpg);}
+            100%{background-image: url(5.jpg);}
+        }
+        ul{
+            background-color: aquamarine;
+            height: 40px;
+            line-height: 40px;
+            font-size: large;
+        }
+        li{
+            display: inline;
+            background-color: beige;
+            margin: 20px;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Slider</h1>
+    <ul type="square">
+        <ins><li>Home</li></ins>
+        <ins><li>News</li></ins>
+        <ins><li>Contact</li></ins>
+        <ins><li>About us</li></ins>
+    </ul>
+    <div>
+
+    </div>
+</body>
+</html>

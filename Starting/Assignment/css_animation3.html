@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        div{
+            text-align: center;
+            padding: 15px;
+            margin: 10%;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-iteration-count: 6;
+            background-size: cover;
+        }
+        /*@keyframes example {
+            from{
+                background-color: rgb(239, 96, 199);
+            }
+            to{
+                background-color: rgb(139, 106, 238);
+            }
+        }*/
+        @keyframes example{
+            0%{background-image: url(1.jpg);}
+            25%{background-image: url(2.jpg);}
+            50%{background-image: url(3.jpg);}
+            75%{background-image: url(4.jpg);}
+            100%{background-image: url(5.jpg);}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+</body>
+</html>

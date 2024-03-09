@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_bar</title>
+    <style>
+        ul{
+            background-color: aquamarine;
+            height: 40px;
+            line-height: 40px;
+            font-size: large;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+        li{
+            display: inline;
+            background-color: beige;
+            margin: 20px;
+        }
+        button{
+            background-color: aliceblue;
+
+        }
+        img{
+            border-radius: 50%;
+            height: inherit 200px;
+            width: inherit 200px;
+        }
+    </style>
+</head>
+<body>
+    <ul type="square">
+        <img src="clg.jpg" alt="">
+        <ins><li><a href="https://witsolapur.org/" target="_blank">Home</a></li></ins>
+        <ins><li><a href="https://witsolapur.org/#" target="_blank">E-learning</a></li></ins>
+        <ins><li><a href="https://witsolapur.org/contact-us/" target="_blank">Contact</a></li></ins>
+        <ins><li><a href="https://witsolapur.org/#" target="_blank">About us</a></li></ins>
+        <button><a href="">Login</a></button>
+        <svg class="icon icon--search">
+            <use xlink:href="#iconsearch"></use>
+        </svg>
+    </ul>
+</body>
+</html>
