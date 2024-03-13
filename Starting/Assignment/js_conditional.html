@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+</head>
+<body>
+    <!-- <h1>if_else</h1> -->
+    <h1>Switch case</h1>
+    <p id="new"></p>
+</body>
+<!-- <script>
+    let a = 10.00
+    if(a <= 2.00)
+    {
+        document.getElementById('new').innerHTML = "Good Morning"
+    }
+    else
+    {
+        document.getElementById('new').innerHTML = "Good Afternoon"
+    }
+</script> -->
+<script>
+    //let a = 2
+    let a = prompt('1 or 2')
+    a = parseInt(a)
+    switch(a)
+    {
+        case 1 : document.getElementById('new').innerHTML = 20 + 10
+        break;
+        case 2 : document.getElementById('new').innerHTML = 20 - 10
+        break;
+        default : alert("Enter the values between 1 and 2")
+    }
+</script>
+</html>

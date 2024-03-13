@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h2>Learning arrays</h2>
+    <p id="new"></p>
+    <p id="new1"></p>
+    <p id="new2"></p>
+</body>
+<script>
+    const cars = ["BMW", "Volvo", "Audi"]
+    const num = [41, 2, 56, 31, 25]
+    document.getElementById('new').innerHTML = cars[0] + " " + cars[1] + " " + cars[2]
+    document.getElementById('new1').innerHTML = num.sort()
+    num.push(55)
+    document.getElementById('new2').innerHTML = num
+</script>
+</html>

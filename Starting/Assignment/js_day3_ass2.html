@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ass_2</title>
+</head>
+<body>
+    <h1>Day 2 Javascript</h1>
+    <h2>Learning Switch</h2>
+    <p id="new"></p>
+</body>
+<script>
+    let a = prompt('Enter the dishes Number : 1 Phav Baji 2 Veg_Roll 3 Pasta 4 Veg_Combo 5 Veg_Pulav 6 Manchurian')
+    a = parseInt(a)
+    switch(a)
+    {
+        case 1 : document.getElementById('new').innerHTML = "Phav Baji rs - 250"
+        break;
+        case 2 : document.getElementById('new').innerHTML = "Veg_Roll rs - 180"
+        break;
+        case 3 : document.getElementById('new').innerHTML = "Pasta rs - 199"
+        break;
+        case 4 : document.getElementById('new').innerHTML = "Veg_Combo rs - 320"
+        break;
+        case 5 : document.getElementById('new').innerHTML = "Veg_Pulav rs - 250"
+        break;
+        case 6 : document.getElementById('new').innerHTML = "Manchurian rs - 150"
+        break;
+        Default : alert('Enter The number between 1 to 6')
+    }
+</script>
+</html>

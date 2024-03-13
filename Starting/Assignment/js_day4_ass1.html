@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4_Ass1</title>
+</head>
+<body>
+    <h2>Learning Arrays and Objects</h2>
+    <p>"Pizza" : 200,<br>
+    "PavBhaji" : 150,<br>
+        "Soup" : 220,<br>
+        "Veg-Manchiria" : 99,<br>
+        "IceCream" : 210</p>
+        <p id="new1"></p>
+</body>
+<script>
+    const Menu = {
+        "Pizza" : 200,
+        "PavBhaji" : 150,
+        "Soup" : 220,
+        "Veg-Manchiria" : 99,
+        "IceCream" : 210
+    };
+    var x = prompt("What you want to order ?")
+    document.getElementById('new1').innerHTML = "You have ordered receipe = " + x + "<br>" + "And the price is rs - " + Menu[x]
+</script>
+</html>
