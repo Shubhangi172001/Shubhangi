@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Javascript day6</h1>
+    <p>Interactive Counter</p>
+    <p>The number is: <span id="new"> 0 </span></p>
+    <button id="a" type="button">Increase the Counter</button>
+</body>
+<script>
+    var p = document.getElementById('a')
+    var count = 0
+    p.addEventListener('click',function fun()
+    {
+        count++
+        document.getElementById('new').textContent = count
+    })
+</script>
+</html>

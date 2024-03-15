@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="new">
+        <h2 id="new1">This is DOM</h2>
+        <p id="new2">Working with DOM</p>
+    </div>
+</body>
+<script>
+    var p = document.createElement("p")
+    p.innerText = " Yes... I have learnt DOM"
+    //p.style.color = "pink"
+    //p.style.fontSize = "15px"
+    //document.getElementById('new').appendChild(p)
+    //document.getElementById('new1').removeChild()
+    var x = document.getElementById('new1')
+    var c = document.getElementById('new')
+    var x1 = document.getElementById('new2')
+    c.replaceChild(p, x)
+    c.removeChild(x1)
+</script>
+</html>

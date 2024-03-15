@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+</head>
+<body>
+    <h2>For Loop</h2>
+    <p id="new"></p>
+    <button type="button" onclick="fun()">Click me</button>
+</body>
+<!-- <script>
+    function fun()
+    {
+        const a = ["BMW", "Audi", "Maruti"]
+        let text = ""
+        for ( let i = 0; i < a.length; i++)
+        {
+            text = text + "The car is" + a[i] + "<br>"
+            document.getElementById('new').innerHTML = text
+        }
+    }
+</script> -->
+<script>
+    const person = {
+        fname: "shubhangi",
+        lname: "Kompelli",
+        age: "23"
+    }
+    for (let x in person)
+    {
+        console.log("key = " + x + " " + "value is " + person[x])
+    }
+</script>
+</html>

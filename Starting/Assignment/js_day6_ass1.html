@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass1</title>
+</head>
+<body>
+    <h1>Javascript day 6 </h1>
+    <p>Learning Events</p>
+    <!-- <button type="button" onclick="fun()">Show / Hide</button> -->
+    <p id="new">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam accusamus alias quas animi qui? Quaerat quisquam voluptas totam, libero enim rem nisi! Aspernatur porro nesciunt distinctio dolores in unde.</p>
+    <p id="new1"></p>
+</body>
+<script>
+    var p = document.getElementById('new')
+    p.addEventListener('mouseover', function fun()
+    {
+        document.getElementById('new1').innerHTML += "MouseOver <br>"
+    })
+    p.addEventListener('mouseout', function fun1()
+    {
+        document.getElementById('new1').innerHTML += "MouseOut <br>"
+    })
+</script>
+<!-- <script>
+    function fun()
+    {
+        var a = document.getElementById('demo')
+        if(a.style.display!='none')
+        {
+            a.style.display = 'none'
+        }
+        else
+        {
+            a.style.display = 'block'
+        }
+    }
+</script> -->
+</html>
+
+
+
+
+<!-- <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+    });
+</script> -->

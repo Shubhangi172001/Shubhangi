@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>CSS Selctor</h1>
+    <p class="new">Learning Document Object Module</p>
+    <p class="new">After this we will learn event handler</p>
+    <p id="new2">
+        Learning Selectors
+        <li>Click</li>
+    </p>
+    <!-- <h1>Working with getelementbyid() or getElementsByClassName()</h1>
+    <p class="new">Learning Document Object Module</p>
+    <p class="new">After this we will learn event handler</p>
+    <p id="new2"></p> -->
+    <!-- <p id="new">Learning Document Object Module</p>
+    <p id="new1">After this we will learn event handler</p>
+    <p id="new2"></p> -->
+</body>
+<script>
+    var sel = document.querySelector(".new")
+    console.log(sel)
+    var sel = document.querySelectorAll(".new")
+    console.log(sel[1])
+    var sel = document.querySelector('#new2')
+    console.log(sel)
+</script>
+<!-- <script>
+    let a = document.getElementsByClassName('new')
+    document.getElementById('new2').innerText = "We are learning Javascript and today we are " + a[0].innerText
+</script> -->
+<!-- <script>
+    let a = document.getElementById('new')
+    document.getElementById('new2').innerHTML = "We are learning Javascript and today we are " + a.innerHTML
+</script> -->
+</html>

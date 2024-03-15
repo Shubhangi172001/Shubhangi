@@ -11,17 +11,10 @@
 
 
 //second code
-    // var text = ""
-    // var a = ""
-    // for (let i = 0; i < 5; i++)
-    // {
-    //     a = text + "The number is "+ i + "<br>"
-    //     console.log(a)
-    // }
-
-
-//third code
-    function fun()
+    var text = ""
+    var a = ""
+    for (let i = 0; i < 5; i++)
     {
-        
+        a = text + "The number is "+ i + "<br>"
+        console.log(a)
     }
