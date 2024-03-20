@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON FILES</title>
+</head>
+<body>
+    <h1>Day 7 Javascript</h1>
+    <h2>Json in Javascript</h2>
+</body>
+<!-- <script>
+    let json1 = {
+        name: "Shubhangi",
+        lname: "Kompelli",
+        age: 23,
+        weight: 55
+    }
+    console.log(json1)
+
+    let b = JSON.stringify(json1)
+    console.log(b)
+    b = b.replace("Shubhangi","Rishita")
+    console.log(b)
+
+    const obj = JSON.parse(b)
+    console.log(obj)
+</script> -->
+<script>
+    let a = '{"employee" :['+
+    '{"fname":"Shubhangi","lname":"Kompelli"},'+
+    '{"fname":"Rishita","lname":"Kompelli"},'+
+    '{"fname":"Aditya","lname":"Kompelli"}]}';
+
+    let b = JSON.parse(a)
+    console.log(b)
+    console.log(b.employee[1].fname)
+</script>
+</html>

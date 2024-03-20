@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <h1>Learning Date and Time</h1>
+    <p>Todays Date with Current Timing : <span id="new"></span></p>
+</body>
+<script>
+    const d = new Date()
+    d.setMonth(6)
+    d.setHours(14)
+    d.setFullYear(2000)
+    document.getElementById('new').innerHTML = d
+    console.log("Date = ",d.setHours(14))
+
+    //const d = new Date()
+    //var a = d.toDateString()
+    //var b = d.toDateString()
+    //document.getElementById('new').innerHTML = a
+    
+    //console.log("Year = ",d.getFullYear())
+    //console.log("Month = ",d.getMonth())
+    //console.log("Date = ",d.getDate())
+    //console.log("Time = ",d.getTime())
+
+    //const d = new Date("2000-10-05")
+    //document.getElementById('new').innerHTML = d
+
+    //const d = new Date(2003, 4, 24, 10, 40, 33, 20)
+    //document.getElementById('new').innerHTML = d
+
+    //const d = new Date(2003, 16, 24, 11, 50, 35)
+    //document.getElementById('new').innerHTML = d
+
+    //const d = new Date(19, 23, 21)
+    //document.getElementById('new').innerHTML = d
+
+    //const d = new Date(5000000)
+    //const d = new Date(-5000000)
+    //document.getElementById('new').innerHTML = d
+</script>
+</html>

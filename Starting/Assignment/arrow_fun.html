@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h1>Learning Arrow Function</h1>
+    <p id="new"></p>
+</body>
+<script>
+    //abs = (a) =>{
+        //if(a>0){
+            //return a
+        //}
+        //else{
+            //return (-a)
+        //}
+    //}
+    //document.getElementById('new').innerHTML = "The abosult value is :" + 5
+
+    //square = (num) => num * num
+    //document.getElementById('new').innerHTML = "The square is : " +square(5)
+
+    let a = {
+        name: "shubhangi",
+        age: [10, 20, 30],
+        display() {
+            this.age.forEach(function(b){
+                document.getElementById('new').innerHTML += b + "<br>"
+            })
+        }
+    }
+    a.display()
+</script>
+</html>
