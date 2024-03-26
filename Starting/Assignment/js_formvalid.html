@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Learning Form Validation and Required element</h1>
+    Roll_no: <input id="num" type="number" name="rollno">
+    <button type="button" onclick="validate()">submit</button>
+    <!-- <form name="myform" onsubmit="validate()">
+        Name: <input type="text" name="fname" required><br><br>
+        Roll_no: <input type="number" name="rollno">
+        <input type="submit" name="submit">
+    </form> -->
+</body>
+<script>
+    function validate()
+    {
+        let x = document.getElementById("num").value
+        let text
+        if ( x > 10 || x < 1 )
+        {
+            text = "Num is not Valid"
+        }
+        else
+        {
+            text = "num is valid"
+        }
+    }
+</script>
+<!-- <script>
+    function validate()
+    {
+        let x = document.forms["myform"]["fname"].value
+        if( x == "")
+        {
+            alert("This Feild cannot be empty......... enter your detail")
+            return false
+        }
+    }
+</script> -->
+</html>

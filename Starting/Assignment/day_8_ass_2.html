@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <style>
+        button{
+            color: grey;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Calculator</h1>
+    <input id="num" type="text"><br><br>
+    <button type="button" onclick="cl()">C</button>
+    <button type="button" onclick="append('7')">7</button>
+    <button type="button" onclick="append('8')">8</button>
+    <button type="button" onclick="append('9')">9</button><br><br>
+    <button type="button" onclick="append('+')">+</button>
+    <button type="button" onclick="append('4')">4</button>
+    <button type="button" onclick="append('5')">5</button>
+    <button type="button" onclick="append('6')">6</button><br><br>
+    <button type="button" onclick="append('-')">-</button>
+    <button type="button" onclick="append('1')">1</button>
+    <button type="button" onclick="append('2')">2</button>
+    <button type="button" onclick="append('3')">3</button><br><br>
+    <button type="button" onclick="append('*')">*</button>
+    <button type="button" onclick="append('0')">0</button>
+    <button type="button" onclick="append('.')">.</button>
+    <button type="button" onclick="cal()">=</button><br><br>
+    <button type="button" onclick="append('/')">/</button>
+    </center>
+</body>
+<script>
+    let exp = " "
+    function append(x)
+    {
+        exp = exp + x 
+        document.getElementById('num').value = exp
+    }
+    function cal()
+    {
+        try{
+            const result = eval(exp)
+            document.getElementById('num').value = result;
+            exp = '';
+        }
+        catch(error){
+            document.getElementById('num').value = 'error';
+            exp = '';
+        }
+    }
+    function cl()
+    {
+        
+        exp = '';
+        document.getElementById('num').value = " "
+        
+    }
+</script>
+</html>

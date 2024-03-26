@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+</head>
+<body>
+    <h1>Learning Calculation programs</h1>
+    <input id="num" type="text"><br><br>
+    <button type="button" onclick="append('1')">1</button>
+    <button type="button" onclick="append('+')">+</button>
+    <button type="button" onclick="append('3')">3</button><br><br>
+    <button type="button" onclick="cal()">=</button>
+</body>
+<script>
+    let exp = " "
+    function append(x)
+    {
+        exp = exp + x 
+        document.getElementById('num').value = exp
+    }
+    function cal()
+    {
+        try{
+            const result = eval(exp)
+            document.getElementById('num').value = result;
+            exp = '';
+        }
+        catch(error){
+            document.getElementById('num').value = 'error';
+            exp = '';
+        }
+    }
+</script>
+</html>
